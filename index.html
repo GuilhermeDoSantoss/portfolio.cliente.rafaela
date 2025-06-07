@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prof. Rafaela Leal - Educação Física</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo animate-slide-in-left">
+                    <div class="logo-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <div class="logo-text">
+                        <div class="logo-name">Prof. Rafaela Leal</div>
+                        <div class="logo-subtitle">Educação Física</div>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <nav class="nav-desktop">
+                    <a href="#home" class="nav-link animate-slide-in-up" style="animation-delay: 0ms;">Home</a>
+                    <a href="#sobre" class="nav-link animate-slide-in-up" style="animation-delay: 100ms;">Sobre Mim</a>
+                    <a href="#servicos" class="nav-link animate-slide-in-up" style="animation-delay: 200ms;">Serviços</a>
+                    <a href="#metodologia" class="nav-link animate-slide-in-up" style="animation-delay: 300ms;">Metodologia</a>
+                    <a href="#depoimentos" class="nav-link animate-slide-in-up" style="animation-delay: 400ms;">Depoimentos</a>
+                    <a href="#blog" class="nav-link animate-slide-in-up" style="animation-delay: 500ms;">Blog</a>
+                    <a href="#contato" class="nav-link animate-slide-in-up" style="animation-delay: 600ms;">Contato</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <div class="cta-desktop animate-slide-in-right">
+                    <button class="btn btn-primary" onclick="openWhatsApp()">Agende sua Avaliação Gratuita</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn animate-slide-in-right" id="mobileMenuBtn">
+                    <i class="fas fa-bars" id="menuIcon"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <nav class="mobile-nav">
+                    <a href="#home" class="mobile-nav-link animate-slide-in-left" style="animation-delay: 0ms;">Home</a>
+                    <a href="#sobre" class="mobile-nav-link animate-slide-in-left" style="animation-delay: 100ms;">Sobre Mim</a>
+                    <a href="#servicos" class="mobile-nav-link animate-slide-in-left" style="animation-delay: 200ms;">Serviços</a>
+                    <a href="#metodologia" class="mobile-nav-link animate-slide-in-left" style="animation-delay: 300ms;">Metodologia</a>
+                    <a href="#depoimentos" class="mobile-nav-link animate-slide-in-left" style="animation-delay: 400ms;">Depoimentos</a>
+                    <a href="#blog" class="mobile-nav-link animate-slide-in-left" style="animation-delay: 500ms;">Blog</a>
+                    <a href="#contato" class="mobile-nav-link animate-slide-in-left" style="animation-delay: 600ms;">Contato</a>
+                    <button class="btn btn-primary mobile-cta animate-slide-in-up" style="animation-delay: 800ms;" onclick="openWhatsApp()">
+                        Agende sua Avaliação Gratuita
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="badge animate-bounce-gentle">✨ Transformação Garantida</div>
+                    <h1 class="hero-title animate-fade-in-up">
+                        Transforme sua <span class="gradient-text">saúde</span> através do movimento
+                    </h1>
+                    <p class="hero-subtitle animate-fade-in-up" style="animation-delay: 200ms;">
+                        Treinamento personalizado com base científica para resultados duradouros. 
+                        Sua jornada de transformação começa aqui.
+                    </p>
+                    <div class="hero-buttons animate-fade-in-up" style="animation-delay: 400ms;">
+                        <button class="btn btn-primary" onclick="scrollToSection('servicos')">
+                            Conheça meus programas
+                            <i class="fas fa-chevron-right bounce-x"></i>
+                        </button>
+                        <button class="btn btn-outline" onclick="openWhatsApp()">
+                            <i class="fas fa-play pulse"></i>
+                            Fale comigo
+                        </button>
+                    </div>
+                    <div class="hero-stats animate-fade-in-up" style="animation-delay: 600ms;">
+                        <div class="stat animate-count-up" style="animation-delay: 350ms;">
+                            <div class="stat-number" data-target="42">0</div>
+                            <div class="stat-label">Clientes transformados</div>
+                        </div>
+                        <div class="stat animate-count-up" style="animation-delay: 300ms;">
+                            <div class="stat-number" data-target="5">0</div>
+                            <div class="stat-label">Anos de experiência</div>
+                        </div>
+                        <div class="stat animate-count-up" style="animation-delay: 400ms;">
+                            <div class="stat-number" data-target="98">0</div>
+                            <div class="stat-label">% Satisfação</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image animate-slide-in-right">
+                    <div class="image-container animate-float">
+                        <img src="img/personal.jpg" alt="Profissional de Educação Física">
+                        <div class="image-bg"></div>
+                        <div class="floating-element floating-1"></div>
+                        <div class="floating-element floating-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <div class="sobre-content">
+                <div class="sobre-image animate-slide-in-left">
+                    <img src="?" alt="personal2">
+                    <div class="cref-badge animate-slide-in-up" style="animation-delay: 500ms;">
+                        <div class="cref-title">CREF </div>
+                        <div class="cref-number">062041/RJ</div>
+                    </div>
+                </div>
+                <div class="sobre-text animate-slide-in-right">
+                    <h2 class="section-title animate-fade-in-up">Sobre mim</h2>
+                    <p class="section-description animate-fade-in-up" style="animation-delay: 200ms;">
+                        Rafaela Leal é a profissional responsável por inúmeras transformações de vidas por meio de uma metodologia própria, desenvolvida com base em conhecimento técnico, experiência prática e resultados comprovados.
+                        Graduada em Licenciatura Plena e Bacharelado em Educação Física pela Universidade Augusto Motta (UNISUAM) em 2020, possuo especialização em Biomecânica do Movimento, área que estuda de forma aprofundada o funcionamento do corpo humano nos mais diversos tipos de exercício e reabilitação.
+                        Com uma abordagem estratégica, baseada em ciência e individualidade, sua metodologia promove resultados reais, consistentes e acima da média, com foco em saúde, desempenho e qualidade de vida. Alio rigor acadêmico e sensibilidade humana para guiar seus alunos e clientes a superarem limites, conquistarem metas e transformarem suas jornadas.
+                    </p>
+                    <div class="features-grid">
+                        <div class="feature animate-slide-in-up" style="animation-delay: 0ms;">
+                            <i class="fas fa-check-circle pulse"></i>
+                            <span>Abordagem individualizada</span>
+                        </div>
+                        <div class="feature animate-slide-in-up" style="animation-delay: 200ms;">
+                            <i class="fas fa-check-circle pulse"></i>
+                            <span>Resultados mensuráveis</span>
+                        </div>
+                        <div class="feature animate-slide-in-up" style="animation-delay: 400ms;">
+                            <i class="fas fa-check-circle pulse"></i>
+                            <span>Atendimento humanizado</span>
+                        </div>
+                        <div class="feature animate-slide-in-up" style="animation-delay: 600ms;">
+                            <i class="fas fa-check-circle pulse"></i>
+                            <span>Base científica</span>
+                        </div>
+                    </div>
+                    <div class="certifications animate-fade-in-up" style="animation-delay: 600ms;">
+                        <h3>Certificações</h3>
+                        <div class="badges">
+                            <span class="badge-cert animate-slide-in-up" style="animation-delay: 0ms;">Personal Trainer</span>
+                            <span class="badge-cert animate-slide-in-up" style="animation-delay: 150ms;">Especialista em Emagrecimento</span>
+                            <span class="badge-cert animate-slide-in-up" style="animation-delay: 300ms;">Nutrição Esportiva</span>
+                            <span class="badge-cert animate-slide-in-up" style="animation-delay: 300ms;">Especialista em Hipertrofia</span>
+                            <span class="badge-cert animate-slide-in-up" style="animation-delay: 300ms;">Especialista em Biomecânica do Movimento</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary animate-fade-in-up" style="animation-delay: 800ms;" onclick="openWhatsApp()">
+                        Agende sua Avaliação Gratuita
+                        <i class="fas fa-arrow-right bounce-x"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section class="servicos" id="servicos">
+        <div class="container">
+            <div class="section-header animate-fade-in-up">
+                <h2 class="section-title">Meus Serviços</h2>
+                <p class="section-description">Programas personalizados para cada objetivo e necessidade</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card animate-slide-in-up" style="animation-delay: 0ms;">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="service-title">Personal Trainer</h3>
+                    <p class="service-description">Treinamento personalizado presencial ou online</p>
+                    <div class="service-price pulse">Sob consulta</div>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle pulse"></i> Avaliação inicial</li>
+                        <li><i class="fas fa-check-circle pulse"></i> Programa personalizado</li>
+                        <li><i class="fas fa-check-circle pulse"></i> Acompanhamento contínuo</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="openWhatsApp()">Saiba mais</button>
+                </div>
+
+                <div class="service-card animate-slide-in-up" style="animation-delay: 200ms;">
+                    <div class="service-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="service-title">Avaliação Física</h3>
+                    <p class="service-description">Análise completa da composição corporal</p>
+                    <div class="service-price pulse">Sob consulta</div>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle pulse"></i> Bioimpedância</li>
+                        <li><i class="fas fa-check-circle pulse"></i> Medidas antropométricas</li>
+                        <li><i class="fas fa-check-circle pulse"></i> Relatório detalhado</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="openWhatsApp()">Saiba mais</button>
+                </div>
+
+                <div class="service-card animate-slide-in-up" style="animation-delay: 400ms;">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="service-title">Emagrecimento</h3>
+                    <p class="service-description">Programa focado em perda de peso saudável</p>
+                    <div class="service-price pulse">Sob consulta</div>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle pulse"></i> Plano nutricional</li>
+                        <li><i class="fas fa-check-circle pulse"></i> Treino específico</li>
+                        <li><i class="fas fa-check-circle pulse"></i> Acompanhamento semanal</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="openWhatsApp()">Saiba mais</button>
+                </div>
+
+                <div class="service-card animate-slide-in-up" style="animation-delay: 600ms;">
+                    <div class="service-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="service-title">Lesões</h3>
+                    <p class="service-description">Exercícios adaptados para melhorar e evitar lesões graves</p>
+                    <div class="service-price pulse">Sob consulta</div>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle pulse"></i> Exercícios funcionais</li>
+                        <li><i class="fas fa-check-circle pulse"></i> Prevenção de lesões</li>
+                        <li><i class="fas fa-check-circle pulse"></i> Fortalecimento</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="openWhatsApp()">Saiba mais</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metodologia Section -->
+    <section class="metodologia" id="metodologia">
+        <div class="container">
+            <div class="section-header animate-fade-in-up">
+                <h2 class="section-title">Minha Metodologia</h2>
+                <p class="section-description">Um processo estruturado para garantir seus resultados</p>
+            </div>
+            <div class="methodology-steps">
+                <div class="step animate-slide-in-up" style="animation-delay: 0ms;">
+                    <div class="step-number">01</div>
+                    <h3 class="step-title">Avaliação Inicial</h3>
+                    <p class="step-description">Análise completa do seu estado físico atual</p>
+                </div>
+                <div class="step animate-slide-in-up" style="animation-delay: 200ms;">
+                    <div class="step-number">02</div>
+                    <h3 class="step-title">Definição de Objetivos</h3>
+                    <p class="step-description">Estabelecemos metas claras e alcançáveis</p>
+                </div>
+                <div class="step animate-slide-in-up" style="animation-delay: 400ms;">
+                    <div class="step-number">03</div>
+                    <h3 class="step-title">Planejamento</h3>
+                    <p class="step-description">Criação do programa personalizado</p>
+                </div>
+                <div class="step animate-slide-in-up" style="animation-delay: 600ms;">
+                    <div class="step-number">04</div>
+                    <h3 class="step-title">Acompanhamento</h3>
+                    <p class="step-description">Monitoramento contínuo dos resultados</p>
+                </div>
+                <div class="step animate-slide-in-up" style="animation-delay: 800ms;">
+                    <div class="step-number">05</div>
+                    <h3 class="step-title">Reavaliação</h3>
+                    <p class="step-description">Ajustes periódicos para otimizar resultados</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos Section -->
+    <section class="depoimentos" id="depoimentos">
+        <div class="container">
+            <div class="section-header animate-fade-in-up">
+                <h2 class="section-title">Depoimentos</h2>
+                <p class="section-description">Veja o que meus clientes falam sobre os seus resultados rápidos e reais</p>
+            </div>
+            <div class="testimonials-container">
+                <div class="testimonial-card animate-slide-in-up">
+                    <div class="testimonial-header">
+                        <img src="" alt="" class="testimonial-avatar pulse-gentle">
+                        <div class="testimonial-info">
+                            <h3 class="testimonial-name animate-fade-in-up"></h3>
+                            <p class="testimonial-age animate-fade-in-up" style="animation-delay: 200ms;">35 anos</p>
+                            <span class="testimonial-result animate-slide-in-up" style="animation-delay: 400ms;">15kg perdidos</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Antes e Depois -->
+                    <div class="before-after-container">
+                        <div class="before-after-images">
+                            <div class="before-image">
+                                <img src="img/fernandoantes1.jpg" alt="Antes da transformação">
+                                <span class="image-label">Antes</span>
+                            </div>
+                            <div class="transformation-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                            <div class="after-image">
+                                <img src="img/fernandodepois2.jpg" alt="Depois da transformação">
+                                <span class="image-label">Depois</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star bounce" style="animation-delay: 0ms;"></i>
+                        <i class="fas fa-star bounce" style="animation-delay: 100ms;"></i>
+                        <i class="fas fa-star bounce" style="animation-delay: 200ms;"></i>
+                        <i class="fas fa-star bounce" style="animation-delay: 300ms;"></i>
+                        <i class="fas fa-star bounce" style="animation-delay: 400ms;"></i>
+                    </div>
+                    <p class="testimonial-text animate-fade-in-up" style="animation-delay: 600ms;">
+                        "Perdi 15kg em 6 meses com o acompanhamento personalizado. Nunca me senti tão bem!"
+                    </p>
+                </div>
+                <div class="testimonial-navigation">
+                    <button class="nav-btn prev-btn" onclick="changeTestimonial(-1)">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="testimonial-dots">
+                        <span class="dot active pulse" onclick="goToTestimonial(0)"></span>
+                        <span class="dot" onclick="goToTestimonial(1)"></span>
+                        <span class="dot" onclick="goToTestimonial(2)"></span>
+                    </div>
+                    <button class="nav-btn next-btn" onclick="changeTestimonial(1)">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <div class="section-header animate-fade-in-up">
+                <h2 class="section-title">Blog & Recursos</h2>
+                <p class="section-description">Dicas e conhecimento para sua jornada fitness</p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card animate-slide-in-up" style="animation-delay: 0ms;">
+                    <img src="?" alt="foto treinando" class="blog-image">
+                    <div class="blog-content">
+                        <span class="blog-date pulse">15 Maio 2025</span>
+                        <h3 class="blog-title">5 Exercícios para Fortalecer o Core</h3>
+                        <p class="blog-excerpt">Descubra exercícios simples e eficazes para fortalecer sua musculatura central e eliminar a gordura abdominal...</p>
+                        <button class="btn btn-outline" onclick="openWhatsApp()">Saiba mais</button>
+                    </div>
+                </article>
+
+                <article class="blog-card animate-slide-in-up" style="animation-delay: 200ms;">
+                    <img src="?" alt="foto-comendo" class="blog-image">
+                    <div class="blog-content">
+                        <span class="blog-date pulse">10 Jan 2025</span>
+                        <h3 class="blog-title">Nutrição Pré e Pós Treino</h3>
+                        <p class="blog-excerpt">Saiba o que comer antes e depois do treino para maximizar seus resultados...</p>
+                        <button class="btn btn-outline" onclick="openWhatsApp()">Saiba mais</button>
+                    </div>
+                </article>
+
+                <article class="blog-card animate-slide-in-up" style="animation-delay: 400ms;">
+                    <img src="?" alt="foto-estudando" class="blog-image">
+                    <div class="blog-content">
+                        <span class="blog-date pulse">05 Abril 2025</span>
+                        <h3 class="blog-title">Mitos do Fitness Desvendados</h3>
+                        <p class="blog-excerpt">Separei verdades de mentiras no mundo do fitness e exercícios...</p>
+                        <button class="btn btn-outline" onclick="openWhatsApp()">Saiba mais</button>
+                    </div>
+                </article>
+            </div>
+
+            <div class="newsletter animate-slide-in-up" style="animation-delay: 600ms;">
+                <div class="newsletter-content">
+                    <h3 class="newsletter-title animate-fade-in-up">Receba Dicas Exclusivas</h3>
+                    <p class="newsletter-description animate-fade-in-up" style="animation-delay: 200ms;">
+                        Cadastre-se e receba conteúdo exclusivo sobre fitness e saúde
+                    </p>
+                    <form class="newsletter-form animate-fade-in-up" style="animation-delay: 400ms;" onsubmit="handleNewsletterSubmit(event)">
+                        <input type="email" placeholder="Seu melhor e-mail" class="newsletter-input" required>
+                        <button type="submit" class="btn btn-primary" onclick="openWhatsApp()">Cadastrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contato">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <div class="logo-text">
+                            <div class="logo-name">Prof. Rafaela Leal</div>
+                            <div class="logo-subtitle">Educação Física</div>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Transformando vidas através do movimento com base científica e atendimento personalizado.
+                    </p>
+                    <div class="social-links">
+                        <a href="www.instagram.com/_rafaelapersonal" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Sobre Mim</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#metodologia">Metodologia</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Serviços</h3>
+                    <ul class="footer-links">
+                        <li><a href="#servicos">Personal Trainer</a></li>
+                        <li><a href="#servicos">Avaliação Física</a></li>
+                        <li><a href="#servicos">Emagrecimento</a></li>
+                        <li><a href="#servicos">Lesões</a></li>
+                        <li><a href="#servicos">Consultoria Online</a></li>
+                        <li><a href="#servicos">Reabilitação</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Contato</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(21) 98058-2820</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>rafaelaalvesleal@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Rio de Janeiro, RJ</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Seg-Dom: 6h-22h</span>
+                        </div>
+                    </div>
+                    <div class="cref-info">
+                        <div class="cref-title">CREF 062041/RJ</div>
+                        <div class="cref-subtitle">Registro Profissional</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    © 2025 Guilherme dos Santos | Engenheiro de Software. Todos os direitos reservados.
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <div class="whatsapp-button animate-bounce-gentle" onclick="openWhatsApp()">
+        <i class="fab fa-whatsapp"></i>
+        <div class="pulse-ring"></div>
+        <div class="pulse-ring-2"></div>
+        <div class="tooltip">Vamos conversar?</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
